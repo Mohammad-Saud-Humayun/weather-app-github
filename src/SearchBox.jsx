@@ -67,7 +67,7 @@ export default function SearchBox({ updateInfo }) {
                     type='submit'
 
                 >Search</Button>
-                {error && <h4 style={{color:"red"}}>No such city exist!</h4>}
+                {error && <h4 style={{ color: "red" }}>No such city exist!</h4>}
             </form>
 
         </div>

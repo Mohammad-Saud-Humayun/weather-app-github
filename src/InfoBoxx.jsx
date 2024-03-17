@@ -28,19 +28,19 @@ export default function InfoBoxx({ info }) {
                             info.humidity > 90
                                 ? RAIN_URL
                                 : info.temp > 20
-                                ? HOT_URL
-                                : COLD_URL
-                            }
+                                    ? HOT_URL
+                                    : COLD_URL
+                        }
 
                     />
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div">
                             {info.city}&nbsp;{
-                            info.humidity > 90
-                                ? <ThunderstormIcon/>
-                                : info.temp > 20
-                                ? <LightModeIcon/>
-                                : <AcUnitIcon/>
+                                info.humidity > 90
+                                    ? <ThunderstormIcon />
+                                    : info.temp > 20
+                                        ? <LightModeIcon />
+                                        : <AcUnitIcon />
                             }
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
